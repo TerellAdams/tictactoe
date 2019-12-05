@@ -1,6 +1,5 @@
-
-
-
+var currentPlayer = "x"
+var counter = 0
 
 
 
@@ -40,4 +39,3 @@ $("#button8").click(function() {
 $("#button9").click(function() {
     performLogic("#button9","#tile9");
 });
-
