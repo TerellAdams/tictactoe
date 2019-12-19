@@ -52,3 +52,5 @@ $("#button8").click(function() {
 $("#button9").click(function() {
     performLogic("#button9","#tile9");
 });
+$('body').css({'background': 'purple', 'text-align': 'center'});
+$('body').css({'user-select': 'none'});
