@@ -1,22 +1,27 @@
-var currentPlayer = "X"
-var counter = 0
+var currentPlayer = "x"
+var counter = 0 ;
 var gameEnd = false
-function performLogic(buttonId, tileId){
-$(`${buttonId}`).hide();
-display_input(tileId)
-}
-function display_input(square){ 
-if ( currentPlayer == "X" ){
-    document.getElementById(square).innerHTML = "X";
-    currentPlayer = "O";
-
-} else {
-    document.getElementById(square).innerHTML = "O";    
-    currentPlayer = "X";
-}   
+function addTurn() {
+  counter = counter + 1
 
 }
-    
+function addTurn() {
+  counter = counter + 1
+
+}function performLogic(buttonId, tileId) {
+  $(buttonId).hide();
+  $(tileId).text(currentPlayer);
+  updatePlayer()
+  addTurn()
+console.log(counter)}
+function updatePlayer() {
+  if (currentPlayer === 'x') {
+  currentPlayer = 'o';
+}else {
+currentPlayer ='x';
+}
+
+}    
 $("#button1").click(function() {
     performLogic("#button1","#tile1");
 });
