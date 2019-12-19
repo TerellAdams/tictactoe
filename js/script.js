@@ -2,7 +2,7 @@ var currentPlayer = "X"
 var counter = 0
 var gameEnd = false
 function performLogic(buttonId, tileId){
-$(`#${buttonId}`).hide();
+$(`${buttonId}`).hide();
 display_input(tileId)
 }
 function display_input(square){ 
